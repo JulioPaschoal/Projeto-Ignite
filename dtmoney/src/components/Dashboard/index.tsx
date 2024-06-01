@@ -1,9 +1,10 @@
-import { Conatiner } from "./styles";
+import Summary from "../Summary";
+import { Container } from "./styles";
 
 export default function Dashboard() {
   return (
-    <Conatiner>
-      
-    </Conatiner>
+    <Container>
+      <Summary/>
+    </Container>
   );
 }
