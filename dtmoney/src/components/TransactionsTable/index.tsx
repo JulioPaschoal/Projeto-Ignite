@@ -1,15 +1,15 @@
 import { useEffect } from "react";
-import { Conatiner } from "./style";
+import { Container } from "./style";
+import { api } from "../../Services/api";
 
 export default function TransactionTable() {
   useEffect(() => {
-    fetch('http://localhost:3000/api/transactions')
-    .then(res => res.json())
-    .then(data => console.log(data));
+    api.get('/transactions')
+    .then(res => console.log(res.data));
   }, []);
-  
+
   return (
-    <Conatiner>
+    <Container>
       <table>
         <thead>
           <tr>
@@ -34,6 +34,6 @@ export default function TransactionTable() {
           </tr>
         </tbody>
       </table>
-    </Conatiner>
+    </Container>
   ) 
 }
