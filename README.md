@@ -6,3 +6,5 @@
 - ReactJs
 - Styled-Components
 - Miragejs
+- Axios
+- React-modal
