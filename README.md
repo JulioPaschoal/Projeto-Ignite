@@ -8,3 +8,4 @@
 - Miragejs
 - Axios
 - React-modal
+- Polished 
